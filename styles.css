@@ -175,6 +175,14 @@
     font-weight: 600;
     font-size:20pt;
   }
+
+  .work-back .project-description {
+    margin-bottom: 30px;
+  }
+
+  .work-back .project-category {
+    font-size: 9px;
+  }
   
   /* 카드가 뒤집힐 때 */
   .work.flipped .work-inner {
