@@ -261,12 +261,16 @@
   
   @media (max-width: 600px) {
     .logo {
-      width: 100%;
+      width: 90%;
       margin-bottom: 20px;
     }
     .navi-bar.shrink .logo {
-      width: 50%;
+      width: 60%;
       margin-bottom: 5px;
+    }
+    .navi-bar.shrink .menu {
+      margin-top: 0;
+      font-size: 13pt;
     }
     .work-container {
       flex-direction: column;
