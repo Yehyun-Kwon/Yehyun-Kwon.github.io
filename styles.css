@@ -272,6 +272,9 @@
       margin-top: 0;
       font-size: 13pt;
     }
+    .container .container-inner {
+      padding: 30px 40px;
+    }
     .work-container {
       flex-direction: column;
       align-items: center;
