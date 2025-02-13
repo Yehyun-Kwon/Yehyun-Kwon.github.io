@@ -235,6 +235,7 @@
     .navi-bar {
       flex-direction: column;
       justify-content: center;
+      padding: 0 40px;
     }
     .navi-bar.shrink .logo {
       width: 30%;
@@ -261,6 +262,11 @@
   @media (max-width: 600px) {
     .logo {
       width: 100%;
+      margin-bottom: 20px;
+    }
+    .navi-bar.shrink .logo {
+      width: 50%;
+      margin-bottom: 5px;
     }
     .work-container {
       flex-direction: column;
@@ -268,5 +274,8 @@
     }
     .work-container .work {
       width: 100%;
+    }
+    .navi-bar {
+      padding: 0 20px;
     }
   }
