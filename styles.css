@@ -290,6 +290,9 @@
       margin-top: 0;
       font-size: 13pt;
     }
+    .menu {
+      font-size: 16pt;
+    }
     .menu ul li {
       margin-right: 50px;
     }
