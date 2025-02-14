@@ -273,7 +273,7 @@
       font-size: 13pt;
     }
     .container .container-inner {
-      padding: 30px 40px;
+      padding: 10px 0;
     }
     .work-container {
       flex-direction: column;
