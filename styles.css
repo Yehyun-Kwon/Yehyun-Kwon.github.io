@@ -224,7 +224,6 @@
 
   .cv-container .cv-page {
     width: 50%;
-    margin-right: 20px;
   }
 
   .cv-container .cv-page:last-child {
@@ -268,11 +267,6 @@
 
     .cv-container .cv-page {
       width: 100%;
-      margin-bottom: 50px;
-    }
-  
-    .cv-container .cv-page:last-child {
-      margin-bottom: 50px;
     }
 
   }
