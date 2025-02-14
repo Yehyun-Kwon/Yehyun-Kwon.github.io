@@ -6,6 +6,10 @@
     font-family: "Onest", serif;
     text-decoration: none;
   }
+  a {
+    color: #000;
+    cursor: url("curser2.png"), auto;
+  }
   .transition {
     position: fixed;
     top: -100vh; /* 처음에는 화면 위에 숨김 */
@@ -82,33 +86,46 @@
 
   .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* 가로 정렬 */
-    gap: 70px; /* 메뉴 간격 */
     font-weight: 200;
     font-style: normal;
   }
 
-/* 메뉴 항목 스타일 */
+  /* 메뉴 항목 스타일 */
   .menu ul li {
-    color: #000; /* 글자색 */
-    cursor: url("curser2.png"), auto;
+    display: inline-block;
+    margin-right: 70px;
   }
-  .menu ul li:hover {
-    text-decoration: underline;
+  .menu ul li:last-child {
+    margin-right: 0;
   }
-
-/* .menu ul li:hover {
   
-} */
+  .menu ul li a {
+    display: block;
+    position: relative;
+    line-height: 100%; 
+  }
 
-/* 컨테이너 아래 여백 추가 (고정된 navi-bar가 컨텐츠를 가리지 않도록) */
+  .menu ul li a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: 0.5s;
+  }
+
+  .menu ul li:hover a::after {
+    width: 100%;
+  }
+
+  /* 컨테이너 아래 여백 추가 (고정된 navi-bar가 컨텐츠를 가리지 않도록) */
   .container {
     width: 100vw;  /* 가로 전체 */
     height: 100vh;
     background-color: #000; /* 원하는 배경색으로 변경 */
-    margin-top: 252px; /* 네비게이션 바가 고정이므로 아래로 밀기 */
+    margin-top: 26vh; /* 네비게이션 바가 고정이므로 아래로 밀기 */
   }
 
   .container .container-inner {
@@ -129,7 +146,7 @@
   .work-container .work {
     display: flex;
     flex-direction: column;
-    width: calc(33.3% - 13px);
+    width: calc(33.3% - 14px);
     text-align: center;
     margin-right: 0;
   }
@@ -274,7 +291,7 @@
       font-size: 13pt;
     }
     .container .container-inner {
-      padding: 10px 0;
+      padding: 20px 0;
     }
     .work-container {
       flex-direction: column;

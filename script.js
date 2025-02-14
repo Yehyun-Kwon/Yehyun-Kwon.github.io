@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () { 
     const works = document.querySelectorAll(".work");
     const navBar = document.querySelector(".navi-bar");
-    const workMenu = document.querySelector("#work-menu");
-    const cvMenu = document.querySelector("#cv-menu");
-    const contactMenu = document.querySelector("#contact-menu");
+    const workMenu = document.querySelector("#work-menu a");
+    const cvMenu = document.querySelector("#cv-menu a");
+    const contactMenu = document.querySelector("#contact-menu a");
     const workContainer = document.querySelector(".work-container");
     const projectContainer = document.querySelector(".project-container");
     const cvContainer = document.querySelector(".cv-container");
@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const projects = document.querySelectorAll(".project");
     const logoImg = document.querySelector(".logo");
     document.body.classList.add("loaded"); // 페이지가 로드되면 페이드인
-
+    
+    // 화면 트랜지션 애니메이션
     function Transition(url) {
       const overlay = document.createElement("div");
       overlay.classList.add("transition");
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         work.addEventListener("mouseleave", () => {
             work.classList.remove("flipped");
         });
+        // 카드마다 click 이벤트 추가
         work.addEventListener("click", () => {
             const workId = work.id;
             const num = workId.charAt(workId.length - 1);
@@ -53,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
-    // 스크롤 이벤트 수정
+    // 네비바 스크롤 이벤트
     window.addEventListener("scroll", () => {
         if (document.documentElement.scrollTop > 50) {
             navBar.classList.add("shrink");
