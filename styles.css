@@ -269,6 +269,14 @@
       width: 100%;
     }
 
+    #cv-1 {
+      z-index: 99;
+    }
+
+    #cv-2 {
+      margin-top: -90px;
+    }
+
   }
   
   @media (max-width: 600px) {
