@@ -103,6 +103,7 @@
     display: block;
     position: relative;
     line-height: 100%; 
+    color: white;
   }
 
   .menu ul li a::after {
