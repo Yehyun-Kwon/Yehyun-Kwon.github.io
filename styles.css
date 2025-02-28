@@ -120,6 +120,9 @@
   .menu ul li:hover a::after {
     width: 100%;
   }
+ .menu ul li.active a::after {
+    width: 100%;
+  }
 
   /* 컨테이너 아래 여백 추가 (고정된 navi-bar가 컨텐츠를 가리지 않도록) */
   .container {
