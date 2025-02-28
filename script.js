@@ -92,3 +92,23 @@ document.addEventListener("DOMContentLoaded", function () {
       Transition(targetPage);
     })
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // 현재 URL 경로 가져오기
+  const path = window.location.pathname;
+
+  // 각 메뉴 아이템과 해당 페이지 경로 매칭
+  const menuItems = {
+    "/index.html": "work-menu",
+    "/cv.html": "cv-menu",
+    "/contact.html": "contact-menu",
+  };
+
+  // 현재 페이지에 해당하는 메뉴 항목 찾기
+  const activeMenuId = menuItems[path];
+
+  // 해당 메뉴 항목에 'active' 클래스 추가
+  if (activeMenuId) {
+    document.getElementById(activeMenuId).classList.add("active");
+  }
+});
