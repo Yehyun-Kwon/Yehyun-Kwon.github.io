@@ -104,11 +104,16 @@ document.addEventListener("DOMContentLoaded", function () {
     "/contact.html": "contact-menu",
   };
 
-  // 현재 페이지에 해당하는 메뉴 항목 찾기
-  const activeMenuId = menuItems[path];
+  // WORK 페이지 내 하위 페이지(예: /work-detail.html)에서도 WORK 유지
+  if (path.includes("/work")) {
+    document.getElementById("work-menu").classList.add("active");
+  } else {
+    // 현재 페이지에 해당하는 메뉴 항목 찾기
+    const activeMenuId = menuItems[path];
 
-  // 해당 메뉴 항목에 'active' 클래스 추가
-  if (activeMenuId) {
-    document.getElementById(activeMenuId).classList.add("active");
+    // 해당 메뉴 항목에 'active' 클래스 추가
+    if (activeMenuId) {
+      document.getElementById(activeMenuId).classList.add("active");
+    }
   }
 });
