@@ -1,3 +1,12 @@
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) { // 캐시된 페이지일 경우
+        const overlay = document.querySelector(".transition");
+        if (overlay) {
+            overlay.remove();
+        }
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () { 
     const works = document.querySelectorAll(".work");
     const navBar = document.querySelector(".navi-bar");
