@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuItems = {
     "/index.html": "work-menu",
     "/cv.html": "cv-menu",
+    "/project.html": "work-menu",
     "/contact.html": "contact-menu",
   };
 
