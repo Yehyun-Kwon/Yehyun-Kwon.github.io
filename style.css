@@ -135,7 +135,7 @@
   .container .container-inner {
     display: block;
     height: auto;
-    padding: 0 100px;
+    padding: 0 100px 100px 100px;
   }
 
   .work-container {
