@@ -8,7 +8,7 @@
   }
   a {
     color: #000;
-    cursor: url("curser2.png"), auto;
+    cursor: url("/img/src/curser2.png"), auto;
   }
   .transition {
     position: fixed;
@@ -36,7 +36,7 @@
     overflow-x: hidden;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    cursor: url("curser1.png"), auto;
+    cursor: url("/img/src/curser1.png"), auto;
   }
   body.loaded {
     opacity: 1;
@@ -76,7 +76,7 @@
     width: 100%;
   }
   .logo:hover {
-    cursor: url("curser2.png"), auto;
+    cursor: url("/img/src/curser2.png"), auto;
   }
 
   .menu {
@@ -156,7 +156,7 @@
   }
 
   .work-container .work:hover {
-    cursor: url("curser2.png"), auto;
+    cursor: url("img/src/curser2.png"), auto;
   }
 
   .work-front img {

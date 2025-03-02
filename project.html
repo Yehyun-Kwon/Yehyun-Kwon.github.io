@@ -42,34 +42,35 @@
   document.addEventListener("DOMContentLoaded", function () {
     const projectId = getProject("n");
     console.log("아이디: ", projectId);
+    const imgPath = "/img/content/";
     if (projectId) {
       const projectImg = document.querySelector("#project img");
         if (projectId == 1) {
-          projectImg.src = "Brixton.jpg";
+          projectImg.src = imgPath + "Brixton.jpg";
         }
         else if (projectId == 2) {
-          projectImg.src = "powder.jpg";
+          projectImg.src = imgPath + "powder.jpg";
         }
         else if (projectId == 3) {
-          projectImg.src = "recof.jpg";
+          projectImg.src = imgPath + "recof.jpg";
         }
         else if (projectId == 4) {
-          projectImg.src = "ondo.jpg";
+          projectImg.src = imgPath + "ondo.jpg";
         }
         else if (projectId == 5) {
-          projectImg.src = "madeleine.jpg";
+          projectImg.src = imgPath + "madeleine.jpg";
         }
         else if (projectId == 6) {
-          projectImg.src = "ommd.jpg";
+          projectImg.src = imgPath + "ommd.jpg";
         }
         else if (projectId == 7) {
-          projectImg.src = "genguard.jpg";
+          projectImg.src = imgPath + "genguard.jpg";
         }
         else if (projectId == 8) {
-          projectImg.src = "sum.jpg";
+          projectImg.src = imgPath + "sum.jpg";
         }
         else if (projectId == 9) {
-          projectImg.src = "illust.jpg";
+          projectImg.src = imgPath + "illust.jpg";
         }
     }
   });
