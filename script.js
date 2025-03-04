@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
       container.classList.add("loaded");
-    }, 100);
+    }, 500);
   };
 
   // 화면 트랜지션 애니메이션
