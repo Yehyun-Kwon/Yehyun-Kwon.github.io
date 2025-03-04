@@ -1,79 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <script src="script.js">
-  </script>
-</head>
-<body>
-  <div class="navi-bar">
-    <div class="logo">
-      <img src="/img/src/logo2.png">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navi-bar">
+      <div class="logo">
+        <img src="/img/src/logo2.png" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li id="work-menu" class="active"><a>WORK</a></li>
+          <li id="cv-menu"><a>CV</a></li>
+          <li id="contact-menu"><a>CONTACT</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="menu">
-      <ul>
-        <li id="work-menu" class="active"><a>WORK</a></li>
-        <li id="cv-menu"><a>CV</a></li>
-        <li id="contact-menu"><a>CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <div class="container-inner">
-      <div class="project-container">
-        <div class="project" id="project">
-          <img src="portfolio.jpg">
+    <div class="container">
+      <div class="container-inner">
+        <div class="project-container">
+          <div class="project" id="project">
+            <img src="portfolio.jpg" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<script>
-  function getProject(num) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(num);
-  }
-  document.addEventListener("DOMContentLoaded", function () {
-    const projectId = getProject("n");
-    console.log("아이디: ", projectId);
-    const imgPath = "/img/content/";
-    if (projectId) {
-      const projectImg = document.querySelector("#project img");
-        if (projectId == 1) {
-          projectImg.src = imgPath + "Brixton.jpg";
+    <script>
+      function getProject(num) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(num);
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const projectId = getProject("n");
+        console.log("아이디: ", projectId);
+        const imgPath = "/img/content/";
+        if (projectId) {
+          const projectImg = document.querySelector("#project img");
+          if (projectId == 1) {
+            projectImg.src = imgPath + "Brixton.jpg";
+          } else if (projectId == 2) {
+            projectImg.src = imgPath + "powder.jpg";
+          } else if (projectId == 3) {
+            projectImg.src = imgPath + "recof.jpg";
+          } else if (projectId == 4) {
+            projectImg.src = imgPath + "ondo.jpg";
+          } else if (projectId == 5) {
+            projectImg.src = imgPath + "madeleine.jpg";
+          } else if (projectId == 6) {
+            projectImg.src = imgPath + "ommd.jpg";
+          } else if (projectId == 7) {
+            projectImg.src = imgPath + "genguard.jpg";
+          } else if (projectId == 8) {
+            projectImg.src = imgPath + "sum.jpg";
+          } else if (projectId == 9) {
+            projectImg.src = imgPath + "illust.jpg";
+          }
         }
-        else if (projectId == 2) {
-          projectImg.src = imgPath + "powder.jpg";
-        }
-        else if (projectId == 3) {
-          projectImg.src = imgPath + "recof.jpg";
-        }
-        else if (projectId == 4) {
-          projectImg.src = imgPath + "ondo.jpg";
-        }
-        else if (projectId == 5) {
-          projectImg.src = imgPath + "madeleine.jpg";
-        }
-        else if (projectId == 6) {
-          projectImg.src = imgPath + "ommd.jpg";
-        }
-        else if (projectId == 7) {
-          projectImg.src = imgPath + "genguard.jpg";
-        }
-        else if (projectId == 8) {
-          projectImg.src = imgPath + "sum.jpg";
-        }
-        else if (projectId == 9) {
-          projectImg.src = imgPath + "illust.jpg";
-        }
-    }
-  });
-</script>
-</body>
+      });
+    </script>
+  </body>
 </html>
