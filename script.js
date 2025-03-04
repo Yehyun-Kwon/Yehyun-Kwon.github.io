@@ -21,22 +21,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoImg = document.querySelector(".logo");
     document.body.classList.add("loaded"); // 페이지가 로드되면 페이드인
     
+    window.onload = function () {
+        navBar.classList.add("show");
+    };
+
     // 화면 트랜지션 애니메이션
     function Transition(url) {
       const overlay = document.createElement("div");
       overlay.classList.add("transition");
-
       document.body.appendChild(overlay); // 화면에 추가
 
       // 0.1초 뒤 배경을 아래로 슬라이드
       setTimeout(() => {
           overlay.style.top = "0";
       }, 100);
-
       // 애니메이션이 끝난 후 페이지 이동 (1초 후)
       setTimeout(() => {
           window.location.href = url;
       }, 1100);
+    //   setTimeout(() => {
+    //     navBar.classList.add("show");
+    //   },100);
     }
 
     function adjustworkHeight() {
