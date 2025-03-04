@@ -10,6 +10,7 @@ window.addEventListener("pageshow", (event) => {
 document.addEventListener("DOMContentLoaded", function () { 
     const works = document.querySelectorAll(".work");
     const navBar = document.querySelector(".navi-bar");
+    const container = document.querySelector(".container");
     const workMenu = document.querySelector("#work-menu a");
     const cvMenu = document.querySelector("#cv-menu a");
     const contactMenu = document.querySelector("#contact-menu a");
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     window.onload = function () {
         navBar.classList.add("show");
+        container.classList.add("loaded");
     };
 
     // 화면 트랜지션 애니메이션

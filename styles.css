@@ -34,13 +34,9 @@
     background-color: #000;
     height: 100vh;
     overflow-x: hidden;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     cursor: url("/img/src/curser1.png"), auto;
   }
-  body.loaded {
-    opacity: 1;
-  }
+  
   .navi-bar {
     height: 0;
     margin-top: -30px;
@@ -136,6 +132,11 @@
     height: 100vh;
     background-color: #000; /* 원하는 배경색으로 변경 */
     margin-top: 26vh; /* 네비게이션 바가 고정이므로 아래로 밀기 */
+    opacity: 0;
+  }
+  .container.loaded {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
   }
 
   .container .container-inner {
