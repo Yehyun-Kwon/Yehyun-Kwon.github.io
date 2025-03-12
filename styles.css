@@ -278,6 +278,10 @@ body {
   margin-right: 7px;
 }
 
+.contact-container .contact .linkedin {
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   .menu {
     margin-top: 5px;
