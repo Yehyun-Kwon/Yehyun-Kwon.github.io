@@ -132,7 +132,7 @@ body {
   width: 100vw; /* 가로 전체 */
   height: 100vh;
   background-color: #000; /* 원하는 배경색으로 변경 */
-  margin-top: 26vh; /* 네비게이션 바가 고정이므로 아래로 밀기 */
+  padding-top: 26vh; /* 네비게이션 바가 고정이므로 아래로 밀기 */
   opacity: 0;
 }
 .container.loaded {
